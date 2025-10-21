@@ -1,0 +1,16 @@
+.background_img_container h1 {
+    text-align: center;
+    font-size: 8vh;
+    margin-bottom: 0px;
+}
+
+.background_img_container h1 .highlight {
+    color: #367048; 
+    display: block; 
+}
+
+.background_img_container h2 {
+    text-align: center;
+    font-size: 4vh;
+}
+
