@@ -1,7 +1,8 @@
     
     <header>
         <div class='header-container'>
-            <img id="logo" src="../img/logoTeamJardinTexte" alt="logo_Team_Jardin">
+            
+            <img id="logo" src="../../img/logoTeamJardinTexte.png" alt="logo_Team_Jardin">
             
             <nav>
                 <ul>
