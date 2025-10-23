@@ -1,8 +1,7 @@
     
     <header>
         <div class='header-container'>
-            
-            <img id="logo" src="../../img/logoTeamJardinTexte.png" alt="logo_Team_Jardin">
+            <img id="logo_header" src="./siteWeb/img/logoTeamJardinTexte.png" alt="logo_Team_Jardin">
             
             <nav>
                 <ul>
@@ -13,7 +12,7 @@
                 </ul>
             </nav>    
         
-            <a href="php/login/login.php" class="btn_login">Se connecter</a>
+            <a href="./siteWeb/siteVitrine/php/vitrine/login.php" class="btn_login">Se connecter</a>
 
 
         </div>
