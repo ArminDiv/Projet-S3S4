@@ -27,8 +27,10 @@
 
         require_once('./php/vitrine/header.php');  // le header en premier
 
-        require_once('./php/vitrine/main_accueil.php'); // le contenu central
-        require_once('./php/vitrine/main_avis.php'); // le contenu central
+  //      require_once('./php/vitrine/main_accueil.php'); // le contenu central
+  //      require_once('./php/vitrine/main_avis.php'); // le contenu central
+        require_once('./php/vitrine/main_realisation.php'); // le contenu central
+
 
         require_once('./php/vitrine/footer.php');  // le footer à la fin
 
