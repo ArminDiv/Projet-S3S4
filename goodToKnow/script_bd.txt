@@ -9,4 +9,5 @@ CREATE TABLE users (
 -- Exemple d'utilisateurs
 INSERT INTO users (username, password, role) VALUES 
 ('admin', MD5('password123'), 'admin'),
+('a', MD5('b'), 'admin'),
 ('client1', MD5('clientpass'), 'client');
