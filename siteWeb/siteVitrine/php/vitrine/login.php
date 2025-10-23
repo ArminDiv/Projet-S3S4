@@ -1,22 +1,63 @@
+<?php
+require_once(__DIR__ . '/../../../../config.php');
+require_once(__DIR__ . '/../../../../db.php'); // connexion à la base
+
+$erreur = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+    // Préparer la requête
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
+    $stmt->execute([
+        'username' => $username,
+        'password' => md5($password)
+    ]);
+
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+        // Stocker l'utilisateur et son rôle dans la session
+        $_SESSION['user'] = $user['username'];
+        $_SESSION['role'] = $user['role'];
+
+        // Redirection selon le rôle
+        if ($user['role'] === 'admin') {
+            header('Location: ' . BASE_URL . '/siteWeb/siteChef/landing.php');
+        } else {
+            header('Location: ' . BASE_URL . '/siteWeb/siteClient/landing.php');
+        }
+        exit;
+    } else {
+        $erreur = 'Identifiant ou mot de passe incorrect';
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
-
-<!-- CSS concernant la page login  -->
-<link rel="stylesheet" href="../../css/login/style.css">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de connexion</title>
-    <link rel="stylesheet" href="pageCo.css">
+    <meta charset="utf-8">
+    <title>Login - Team Jardin</title>
+    <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/login/style.css" rel="stylesheet">
 </head>
-<body>
-    
-    <img id="logo_login" src="../../../img/logoTeamJardinLogin.png" alt="Logo">
-    <input type="text" class="input" name="email" placeholder="email@univ-lyon1.fr">
-    <input type="password" class="input" name="mot de passe" placeholder="Mot de passe">
-    <button class="btn">Se connecter</button>
-    <a href="pageCreationCompte.html">Nouveau ? Créer un compte !</a>
+<body class="page-login">
+    <div class="form-container">
+        <img id="logo_login" src="<?= BASE_URL ?>/siteWeb/img/logoTeamJardinLogin.png" alt="Logo Team Jardin">
+        <?php if ($erreur) : ?>
+            <div class="erreur"><?= $erreur ?></div>
+        <?php endif; ?>
+        <form method="POST" action="">
+            <input class="input" type="text" name="username" placeholder="email@univ-lyon1.fr" required>
+            <input class="input" type="password" name="password" placeholder="Mot de passe" required>
+            <button class="btn_connexion" type="submit">Connexion</button>
+
+            <a href="pageCreationCompte.html">Nouveau ? Créer un compte !</a>
+
+        </form>
+    </div>
 
 </body>
 </html>

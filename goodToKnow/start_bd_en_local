@@ -1,0 +1,9 @@
+Activer Wamp
+Taper dans un navigateur 
+http://localhost/phpmyadmin 
+
+Se connecter avec les logs par défaut :
+login : 'root'
+password : ''
+
+Executer le script sql contenu dans le fichier 'script_bd.txt'
