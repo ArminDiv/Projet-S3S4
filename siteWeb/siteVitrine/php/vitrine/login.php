@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <img id="logo"src="../../../img/logoTeamJardinLogin.png" alt="Logo">
+    <img id="logo_login" src="../../../img/logoTeamJardinLogin.png" alt="Logo">
     <input type="text" class="input" name="email" placeholder="email@univ-lyon1.fr">
     <input type="password" class="input" name="mot de passe" placeholder="Mot de passe">
     <button class="btn">Se connecter</button>
