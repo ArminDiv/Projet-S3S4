@@ -5,7 +5,7 @@
 }
 
 .background_img_container h1 .highlight {
-    color: #367048; 
+    color: var(--vert-fonce); 
     display: block; 
 }
 

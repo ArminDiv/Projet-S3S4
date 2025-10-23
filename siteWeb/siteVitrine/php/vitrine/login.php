@@ -22,11 +22,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user'] = $user['username'];
         $_SESSION['role'] = $user['role'];
 
+
         // Redirection selon le rôle
         if ($user['role'] === 'admin') {
-            header('Location: ' . BASE_URL . '/siteWeb/siteChef/landing.php');
+            
+            header('Location: ' . BASE_URL . '/siteWeb/siteChef/index-chef.php');
         } else {
-            header('Location: ' . BASE_URL . '/siteWeb/siteClient/landing.php');
+            header('Location: ' . BASE_URL . '/siteWeb/siteClient/index-client.php');
         }
         exit;
     } else {
@@ -42,10 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="utf-8">
     <title>Login - Team Jardin</title>
     <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/login/style.css" rel="stylesheet">
+    <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/charte-graphique.css" rel="stylesheet">
 </head>
 <body class="page-login">
     <div class="form-container">
-        <img id="logo_login" src="<?= BASE_URL ?>/siteWeb/img/logoTeamJardinLogin.png" alt="Logo Team Jardin">
+        <img id="logo_login" src="<?= BASE_URL ?>/siteWeb/img/logoTeamJardin.png" alt="Logo Team Jardin">
         <?php if ($erreur) : ?>
             <div class="erreur"><?= $erreur ?></div>
         <?php endif; ?>

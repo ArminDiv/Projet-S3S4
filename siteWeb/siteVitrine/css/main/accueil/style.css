@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 .background_img_container {
     background-image: url("../../../../img/background_pelouse.png"); /* tant que l'arbo interne ne change pas l'image s'affiche*/
 
@@ -10,3 +14,24 @@
     background-repeat: no-repeat;  
 }
 
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 50vh;           
+}
+
+
+.btn-transparent {
+    background-color: rgba(128, 128, 128, 0.5); 
+    color: white;                               
+    border: 2px solid gray;                               
+    border-radius: 50px;                         
+    padding: 100px 200px;                         
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    background-color: rgba(128, 128, 128, 0.8); 
+}
