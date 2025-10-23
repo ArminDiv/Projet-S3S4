@@ -1,1 +1,0 @@
-<h1>page d'accueil du chef d'entreprise</h1>

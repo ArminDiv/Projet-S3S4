@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/config.php'); // adapte le chemin si nécessaire
+require_once(__DIR__ . '/config.php'); // adapter le chemin si nécessaire
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,6 +8,8 @@ require_once(__DIR__ . '/config.php'); // adapte le chemin si nécessaire
     <title>Team jardin</title>
 
     <!-- CSS -->
+    <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/charte-graphique.css" rel="stylesheet">
+
     <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/header/style.css" rel="stylesheet">
     <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/header/position.css" rel="stylesheet">
 
@@ -19,16 +21,17 @@ require_once(__DIR__ . '/config.php'); // adapte le chemin si nécessaire
 
     <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/login/style.css" rel="stylesheet">
 
+    <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/footer/style.css" rel="stylesheet">
 
 </head>
-<body>
+    <body>
 
-<?php
-require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/header.php');
-require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/main_accueil.php');
-require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/main_avis.php');
-require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/footer.php');
-?>
+        <?php
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/header.php');
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/main_accueil.php');
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/main_avis.php');
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/footer.php');
+        ?>
 
-</body>
+    </body>
 </html>

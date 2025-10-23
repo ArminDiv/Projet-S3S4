@@ -1,11 +1,12 @@
 body.page-login{
-    background-color: #FBFFE9;
+    background-color: var(--bg);
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    flex-direction: column;}
+    flex-direction: column;
+}
 
 .input {
     display: block;
