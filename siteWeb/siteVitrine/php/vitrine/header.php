@@ -5,10 +5,10 @@
             
             <nav>
                 <ul>
-                    <a href="https://www.lessimpson.fr/" target="_blank"><li>Accueil</li></a>
-                    <a href="https://www.lessimpson.fr/" target="_blank"><li>Avis</li></a>
-                    <a href="https://www.lessimpson.fr/" target="_blank"><li>Nos réalisations</li></a>
-                    <a href="https://www.lessimpson.fr/" target="_blank"><li>Contact</li></a>
+                    <li><a href="https://www.lessimpson.fr/" target="_blank">Accueil</a></li>
+                    <li><a href="https://www.lessimpson.fr/" target="_blank">Avis</a></li>
+                    <li><a href="https://www.lessimpson.fr/" target="_blank">Nos réalisations</a></li>
+                    <li><a href="https://www.lessimpson.fr/" target="_blank">Contact</a></li>
                 </ul>
             </nav>    
         
