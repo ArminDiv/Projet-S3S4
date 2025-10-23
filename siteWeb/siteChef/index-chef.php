@@ -15,6 +15,8 @@ require_once(__DIR__ . '/../../db.php');
     <!-- CSS -->
     <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/header/style.css" rel="stylesheet">
     <link href="<?= BASE_URL ?>/siteWeb/siteChef/css/landing/position.css" rel="stylesheet">
+    <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/charte-graphique.css" rel="stylesheet">
+
 
 </head>
     <body>

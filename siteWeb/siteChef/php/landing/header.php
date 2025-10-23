@@ -1,6 +1,6 @@
     <header class='header-site-chef-landing'>
         <div class='header-container'>
-            <img id="logo_header" src="<?= BASE_URL ?>/siteWeb/img/logoTeamJardinTexte.png" alt="logo_Team_Jardin">
+            <img id="logo_header" src="<?= BASE_URL ?>/siteWeb/siteVitrine/img/logoTeamJardinTexte.png" alt="logo_Team_Jardin">
             
             <nav>
                 <ul>
