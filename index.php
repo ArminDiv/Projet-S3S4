@@ -1,9 +1,5 @@
 <?php
-define('BASE_URL', '/Projet-S3S4'); // définir une seule fois
-session_start();
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+require_once(__DIR__ . '/config.php'); // adapte le chemin si nécessaire
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,6 +16,10 @@ error_reporting(E_ALL);
 
     <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/main/avis/style.css" rel="stylesheet">
     <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/main/avis/position.css" rel="stylesheet">
+
+    <link href="<?= BASE_URL ?>/siteWeb/siteVitrine/css/login/style.css" rel="stylesheet">
+
+
 </head>
 <body>
 
