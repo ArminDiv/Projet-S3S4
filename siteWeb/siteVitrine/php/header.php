@@ -12,7 +12,7 @@
                 </ul>
             </nav>    
         
-            <a href="./siteWeb/siteVitrine/php/vitrine/login.php" class="btn_login">Se connecter</a>
+            <a href="./siteWeb/siteVitrine/php/login.php" class="btn_login">Se connecter</a>
 
 
         </div>

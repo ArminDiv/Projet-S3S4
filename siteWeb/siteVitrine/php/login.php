@@ -1,6 +1,6 @@
 <?php
-require_once(__DIR__ . '/../../../../config.php');
-require_once(__DIR__ . '/../../../../db.php'); // connexion à la base
+require_once(__DIR__ . '/../../../config.php');
+require_once(__DIR__ . '/../../../db.php'); // connexion à la base
 
 $erreur = '';
 

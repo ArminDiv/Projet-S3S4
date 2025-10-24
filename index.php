@@ -27,10 +27,10 @@ require_once(__DIR__ . '/config.php'); // adapter le chemin si nécessaire
     <body>
 
         <?php
-        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/header.php');
-        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/main_accueil.php');
-        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/main_avis.php');
-        require_once(__DIR__ . '/siteWeb/siteVitrine/php/vitrine/footer.php');
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/header.php');
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/main_accueil.php');
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/main_avis.php');
+        require_once(__DIR__ . '/siteWeb/siteVitrine/php/footer.php');
         ?>
 
     </body>
