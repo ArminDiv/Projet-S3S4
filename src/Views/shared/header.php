@@ -1,7 +1,3 @@
-<?php
-$nav = $nav ?? ['Accueil', 'Avis', 'Nos réalisations', 'Contact']; 
-$bouton = $bouton ?? "Se connecter";
-$redirection = $redirection ?? BASE_URL . "/public/shared/login.php";?>
 
 <header>
     <div class='header-container'>
