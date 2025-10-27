@@ -18,7 +18,6 @@ function CreerUtilisateur(PDO $pdo, string $username, string $password, string $
     ]);
 }
 
-
 function getRoles(PDO $pdo): array {
     $stmt = $pdo->query("SELECT DISTINCT role FROM users"); 
     return $stmt->fetchAll(PDO::FETCH_COLUMN); 

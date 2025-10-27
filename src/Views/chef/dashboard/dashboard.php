@@ -1,10 +1,9 @@
 <?php
 
-require_once(__DIR__ . '/../../config/config.php'); 
-require_once(__DIR__ . '/../../config/db.php');     
+require_once(__DIR__ . '/../../../config.php'); 
+require_once(__DIR__ . '/../../../Database/db.php');     
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,20 +19,8 @@ require_once(__DIR__ . '/../../config/db.php');
 
     <link href="<?= BASE_URL ?>/public/assets/shared/charte-graphique.css" rel="stylesheet">
 
-
 </head>
-    <body>
 
-        <?php
-            $nav = ["Tableau de bord", "Facturation", "Planning"];
-            $bouton = "Déconnexion";
-            $redirection = BASE_URL . "/public/index.php";
-
-
-            require_once (__DIR__ . '/../shared/header.php');
-            require_once(__DIR__ . '/dashboard/main.php');
-        ?>
-
-    </body>
-</html>
-
+    <div class="landing-main">
+        <img src="<?= BASE_URL ?>/public/assets/chef/img/dashboard.png" alt="dashboard">
+    </div>
