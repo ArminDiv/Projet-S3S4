@@ -20,11 +20,17 @@
     <link href="<?= BASE_URL ?>/public/assets/shared/footer/style.css" rel="stylesheet">
     <link href="<?= BASE_URL ?>/public/assets/shared/footer/position.css" rel="stylesheet">
 
+    <link href="<?= BASE_URL ?>/public/assets/vitrine/css/contact/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <?php
+    
 
+
+
+    <?php
+    
     $nav = $nav ?? ['Accueil', 'Avis', 'Nos réalisations', 'Contact']; 
     $bouton = $bouton ?? "Se connecter";
     $redirection = $redirection ?? BASE_URL . "/public/index.php?page=login";
@@ -53,6 +59,7 @@
         ]
     ];
     require_once __DIR__ . '/vitrine/avis.php';
+    require_once __DIR__ . '/vitrine/contact.php';
     require_once __DIR__ . '/shared/footer.php';
     ?>
 </body>

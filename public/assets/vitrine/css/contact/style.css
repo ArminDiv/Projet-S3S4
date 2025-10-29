@@ -1,0 +1,139 @@
+/*body.page-contact {
+    background-color: var(--bg);
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    padding: 40px 0;
+}
+
+/* --- Conteneur principal --- */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* permet de passer sur 1 colonne sur petits écrans */
+    gap: 60px;
+    width: 100%;
+    height: 90vh;
+    /*background-color: var(--bg);*/
+    background-color: white;
+}
+
+/* --- Bloc "étapes" --- */
+.steps {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.steps h2 {
+    color: var(--green-dark, #367048);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.step {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+    transition: transform 0.2s ease, opacity 0.2s;
+}
+
+.step.active {
+    opacity: 1;
+    
+}
+
+.step:hover {
+    border: 2px solid var(--green-dark, #367048);
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.step .number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--green-dark, #367048);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step h3 {
+    color: var(--green-dark, #367048);
+    margin: 0;
+}
+
+.step p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* --- Bloc formulaire --- */
+.contact-form {
+    flex: 1 1 45%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    color: var(--green-dark, #367048);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn_connexion {
+    background-color: var(--green-dark, #367048);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn_connexion:hover {
+    background-color: #3f8654;
+    transform: scale(1.03);
+}
+
+
