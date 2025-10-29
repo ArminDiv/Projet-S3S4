@@ -1,5 +1,8 @@
 <div class="contact-container">
+    <h2 class="page-subtitle">Nous contacter</h2>
     <section class="steps">
+
+        
         <h2>Vos envies en 4 étapes</h2>
 
             <div class="step active">
