@@ -8,7 +8,7 @@ require_once __DIR__ . '/Controllers/LogoutController.php';
 
 $page = $_GET['page'] ?? 'home';
 
-$pagesPubliques = ['login', 'register', 'logout', 'home'];
+$pagesPubliques = ['login', 'register', 'logout', 'home', 'contact'];
 
 if (!in_array($page, $pagesPubliques) && empty($_SESSION['user'])) {
 
@@ -41,6 +41,11 @@ switch ($page) {
         $controller = new LogoutController();
         $controller->handleRequest();
         break;
+
+    case 'contact':
+        require_once __DIR__ . '/../src/Views/shared/contact.php';
+    break;
+
         
     default:
         http_response_code(404);
