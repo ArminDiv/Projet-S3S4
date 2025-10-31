@@ -1,0 +1,90 @@
+#main_realisation {
+    background-color: #FBFFE9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+#main_realisation h3 {
+    color: #777;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: None;
+}
+
+#main_realisation h2 {
+    color: #367048;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-decoration: None;
+    margin-top: 2px; /*Je sais pas pourquoi mais ça s'écarte de fouuuuuuu*/
+}
+
+.container-realisation {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* === CARTE === */
+.realisation-item {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.realisation-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* === IMAGE === */
+.realisation-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+
+.realisation-image img {
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+    border-radius: 16px;
+    transition: transform 0.4s ease;
+}
+
+.realisation-item:hover .realisation-image img {
+    transform: scale(1.03);
+}
+
+.realisation-commentaire {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    background: rgba(240, 240, 240, 0.7); /* gris clair transparent */
+    color: #333;
+    font-size: 0.85rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+}
+
+.realisation-item:hover .realisation-commentaire {
+    opacity: 1;
+}
